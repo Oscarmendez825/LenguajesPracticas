@@ -8,7 +8,7 @@
 
 ;FIBONACCI
 (define (fibonacci numero) ;se define la funcion fibonacci
-  (cond ((equal? numero 0) 0);condicion de parada si numero es igual a 0 devuelve 1
+  (cond ((equal? numero 0) 1);condicion de parada si numero es igual a 0 devuelve 1
          ((equal? numero 1) 1);condicion de parada si numero es igual a 0 devuelve 1
           (else
            (+ (fibonacci (- numero 1)) (fibonacci (- numero 2))))))  ; se hace la suma de Fib(n-1) + Fib(n-2)
